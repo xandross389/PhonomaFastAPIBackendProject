@@ -5,5 +5,5 @@ services:
     image: phonoma-fastapi:latest
     container_name: phonoma_fastapi
     ports:
-      - 8000:8000
+      - 8000:80
     restart: unless-stopped
