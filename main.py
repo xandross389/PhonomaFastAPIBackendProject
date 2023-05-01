@@ -72,6 +72,6 @@ async def solution(request: SolutionRequest, response: Response):
 def process_orders(orders: List[Dict], criterion: str) -> float:
     total = 0
     for order in orders:
-        if order['status'] == criterion or criterion == "all":
-            total += order['price'] * order['quantity']
+        if order["status"] == criterion or criterion == "all":
+            total += order["price"] * order["quantity"]
     return round(total, 2)
