@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  phonoma-fastapi:
+    image: phonoma-fastapi:latest
+    container_name: phonoma_fastapi
+    ports:
+      - 8000:8000
+    restart: unless-stopped
